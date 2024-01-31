@@ -52,7 +52,7 @@ function Footer() {
             <span>Community Standards</span>
           </div>
           <div className="item">
-            <h2>More From Fiverr</h2>
+            <h2>More From Gigex</h2>
             <span>Gigex Business</span>
             <span>Gigex Pro</span>
             <span>Gigex Logo Maker</span>
