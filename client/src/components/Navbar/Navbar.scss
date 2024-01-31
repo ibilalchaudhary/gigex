@@ -1,3 +1,5 @@
+
+
 .navbar{
     display: flex;
     flex-direction: column;
@@ -7,13 +9,20 @@
     transition: 0.5 all ease;
     position: sticky;
     top: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 
     &.active{
         background-color: white;
         color: black;
     }
     .container{
-        width: 1400px;
+        width: 90vw;
+        margin: 0;
+        padding: 0;
         display: flex;
         justify-content: space-between;
         padding: 20px 0px;
@@ -87,7 +96,7 @@
     }
 
     .menu{
-        width: 1400px;
+        width: 90vw;
         padding: 10px 0px;
         display: flex;
         justify-content: space-between;

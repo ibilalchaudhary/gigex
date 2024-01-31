@@ -3,6 +3,10 @@
     justify-content: center;
     color: #666;
     margin: 50px 0px;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   
     img {
       width: 24px;
@@ -10,7 +14,7 @@
     }
   
     .container {
-      width: 1400px;
+      width: 90vw;
       .top {
         display: flex;
         justify-content: space-between;
