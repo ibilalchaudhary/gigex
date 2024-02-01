@@ -13,6 +13,21 @@ import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/MyGigs";
 
+//fonts
+import "./fonts/DomaineDispNar-Black.woff";
+import "./fonts/DomaineDispNar-BlackItalic.woff";
+import "./fonts/DomaineDispNar-Bold.woff";
+import "./fonts/DomaineDispNar-BoldItalic.woff";
+import "./fonts/DomaineDispNar-Extrabold.woff";
+import "./fonts/DomaineDispNar-ExtraboldItalic.woff";
+import "./fonts/DomaineDispNar-Medium.woff";
+import "./fonts/DomaineDispNar-MediumItalic.woff";
+import "./fonts/DomaineDispNar-Regular.woff";
+import "./fonts/DomaineDispNar-Regularitalic.woff";
+import "./fonts/DomaineDispNar-Semibold.woff";
+import "./fonts/DomaineDispNar-SemiboldItalic.woff";
+
+
 import {
   createBrowserRouter,
   RouterProvider,
