@@ -4,7 +4,8 @@ import Featured from "../../components/featured/Featured";
 import TrustedBy from "../../components/trustedBy/TrustedBy";
 import Slide from "../../components/slide/Slide";
 import CatCard from "../../components/catCard/CatCard";
-import { cards } from "../../data";
+import ProjectCard from "../../components/projectCard/ProjectCard";
+import { cards, projects } from "../../data";
 
 function Home() {
   return (
@@ -62,6 +63,94 @@ function Home() {
               controls
               poster="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_700,dpr_1.0/v1/attachments/generic_asset/asset/089e3bb9352f90802ad07ad9f6a4a450-1599517407052/selling-proposition-still-1400-x1.png"
             ></video>
+          </div>
+        </div>
+      </div>
+      <div className="explore">
+        <div className="container">
+          <h1>You need it, we've got it</h1>
+          <div className="items">
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/graphics-design.d32a2f8.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Graphics & Design</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/online-marketing.74e221b.svg"
+                alt=""
+              />
+              <div className="line"></div>
+
+              <span>Digital Marketing</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/writing-translation.32ebe2e.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Writing & Translation</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/video-animation.f0d9d71.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Video & Animation</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/music-audio.320af20.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Music & Audio</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/programming.9362366.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Programming & Tech</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/business.bbdf319.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Business</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/lifestyle.745b575.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Lifestyle</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/data.718910f.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Data</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/photography.01cf943.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Photography</span>
+            </div>
           </div>
         </div>
       </div>
@@ -141,6 +230,51 @@ function Home() {
               src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_870,dpr_1.0/v1/attachments/generic_asset/asset/51c35c7cecf75e6a5a0110d27909a2f5-1690202609364/EN.png"
               alt=""
             />
+          </div>
+        </div>
+      </div>
+      <div className="quote">
+        <div className="container">
+          <div className="right">
+            <img
+              src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173395/testimonial-video-still-haerfest.jpg"
+              alt=""
+            />
+          </div>
+          <div className="left">
+            <div className="title3">
+              <span>Caitlin Tormey, Chief Commercial Officer</span>
+              <hr />
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/naadam-logo-x2.a79031d.png"
+                alt=""
+              />
+            </div>
+            <div className="desc">
+              <span>
+                "We've used Gigex for Shopify web development, graphic design,
+                and backend web development. Working with Gigex makes my job a
+                little easier every day."
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="projects">
+        <span className="title1">Inspiring work made on Gigex</span>
+        <Slide slidesToShow={4} arrowsScroll={4}>
+          {projects.map((card) => (
+            <ProjectCard key={card.id} card={card} />
+          ))}
+        </Slide>
+      </div>
+      <div className="banner">
+        <div className="container">
+          <div className="content">
+            <span>
+              Suddenly it's all so <span>doable</span>.
+            </span>
+            <button>Join Gigex</button>
           </div>
         </div>
       </div>
