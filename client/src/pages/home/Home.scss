@@ -1,4 +1,6 @@
-.pop_services{
+.home{
+    // overflow: hidden;
+    .pop_services{
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -8,5 +10,109 @@
         font-size: 2rem;
         font-weight: 600;
         color: #404145;
+    }
+   }
+
+    .features{
+        background-color: #FFF5EB;
+        display: flex;
+        justify-content: center;
+        padding: 100px 0px;
+        width: 100vw;
+        margin: 0;
+        box-sizing: border-box;
+
+        &.dark {
+            width: 99vw;
+            background-color: #0d084d;
+            border-radius: 20px;
+      
+            h1 {
+              color: white !important;
+            }
+      
+            i {
+              font-weight: 300;
+            }
+      
+            p {
+              margin-bottom: 20px;
+              color: white !important;
+            }
+      
+            .title {
+              color: white !important;
+              font-weight: 400 !important;
+              font-size: 16px !important;
+              width: 500px;
+              align-items: center;
+            }
+      
+            button {
+              background-color: white;
+              border: none;
+              color: #404145;
+              padding: 10px 20px;
+              border-radius: 5px;
+              width: max-content;
+              font-size: 16px;
+              font-weight: 600 !important;
+              cursor: pointer;
+              margin-top: 20px;
+            }
+          }
+
+        .container {
+            width: 90vw;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            .item {
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              &:first-child {
+                flex: 1;
+              }
+              &:last-child {
+                flex: 1;
+              }
+      
+              img{
+                width: 100%;
+              }
+              h1 {
+                font-weight: 600;
+                margin-bottom: 10px;
+                color: #404145;
+              }
+              .title {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-weight: 550;
+                font-size: 18px;
+                color: #404145;
+                img {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+              p {
+                font-size: 18px;
+                font-weight: 400;
+                color: gray;
+                line-height: 28px;
+                letter-spacing: 1px;
+              }
+      
+              video{
+                width: 700px;
+                height: 450px;
+                border-radius: 8px;
+                
+              }
+            }
+        }
     }
 }
