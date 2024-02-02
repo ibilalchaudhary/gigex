@@ -1,6 +1,6 @@
 import "./app.scss";
 import React from "react";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
 import Gigs from "./pages/gigs/Gigs";
