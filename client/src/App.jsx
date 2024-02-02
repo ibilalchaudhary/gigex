@@ -13,8 +13,7 @@ import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/MyGigs";
 
-//fonts
-
+//fonts deleted
 import "./fonts/DomaineDispNar-MediumItalic.woff";
 
 
