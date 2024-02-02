@@ -1,6 +1,6 @@
 import "./app.scss";
 import React from "react";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
 import Gigs from "./pages/gigs/Gigs";
@@ -13,19 +13,9 @@ import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/MyGigs";
 
-//fonts
-import "./fonts/DomaineDispNar-Black.woff";
-import "./fonts/DomaineDispNar-BlackItalic.woff";
-import "./fonts/DomaineDispNar-Bold.woff";
-import "./fonts/DomaineDispNar-BoldItalic.woff";
-import "./fonts/DomaineDispNar-Extrabold.woff";
-import "./fonts/DomaineDispNar-ExtraboldItalic.woff";
-import "./fonts/DomaineDispNar-Medium.woff";
+//fonts 
 import "./fonts/DomaineDispNar-MediumItalic.woff";
-import "./fonts/DomaineDispNar-Regular.woff";
-import "./fonts/DomaineDispNar-Regularitalic.woff";
-import "./fonts/DomaineDispNar-Semibold.woff";
-import "./fonts/DomaineDispNar-SemiboldItalic.woff";
+
 
 
 import {
