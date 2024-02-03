@@ -16,8 +16,6 @@ import MyGigs from "./pages/myGigs/MyGigs";
 //fonts 
 import "./fonts/DomaineDispNar-MediumItalic.woff";
 
-
-
 import {
   createBrowserRouter,
   RouterProvider,
