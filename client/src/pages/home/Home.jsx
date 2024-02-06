@@ -6,15 +6,37 @@ import Slide from "../../components/slide/Slide";
 import CatCard from "../../components/catCard/CatCard";
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import { cards, projects } from "../../data";
+import { useState, useEffect } from 'react';
 
 function Home() {
+  const [slidesToShow, setSlidesToShow] = useState(5);
+  const [arrowsScroll, setArrowsScroll] = useState(5);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setSlidesToShow(1);
+        setArrowsScroll(1);
+      } else {
+        setSlidesToShow(5);
+        setArrowsScroll(5);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className="home">
       <Featured />
       <TrustedBy />
       <div className="pop_services">
         <span className="title1">Popular Services</span>
-        <Slide slidesToShow={5} arrowsScroll={5}>
+        <Slide slidesToShow={slidesToShow} arrowsScroll={arrowsScroll}>
           {cards.map((card) => (
             <CatCard key={card.id} card={card} />
           ))}

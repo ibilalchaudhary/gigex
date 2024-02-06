@@ -28,3 +28,12 @@
       font-weight: 500;
     }
   }
+
+  @media (max-width: 600px){
+    a{
+      display: flex;
+      justify-content: center;
+    .catCard{
+      width: 80vw;
+    }}
+  }
