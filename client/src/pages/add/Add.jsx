@@ -5,6 +5,8 @@ import upload from "../../utils/upload";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Add = () => {
   const [singleFile, setSingleFile] = useState(undefined);
@@ -64,14 +66,24 @@ const Add = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    mutation.mutate(state);
-    // navigate("/mygigs")
+    try {
+      await mutation.mutate(state);
+      await new Promise((resolve) => {
+        toast.success('Gig successfully created!', {
+          onClose: () => resolve()
+        });
+      });
+      navigate('/mygigs');
+    } catch (error) {
+      toast.error('Error creating gig. Please try again');
+    }
   };
   
   
 
   return (
     <div className="add">
+      <ToastContainer position="top-center"/>
       <div className="container">
         <h1>Add New Gig</h1>
         <div className="sections">
