@@ -279,7 +279,7 @@
 
     .right {
       flex: 1;
-      border: 1px solid lightgray;
+      border: 2px solid rgb(230, 230, 230);
       padding: 20px;
       border-radius: 5px;
       display: flex;
@@ -297,12 +297,13 @@
         justify-content: space-between;
 
         h2 {
-          font-weight: 400;
-          font-size: 20px;
+          font-weight: 550;
+          font-size: 25px;
         }
 
         h3 {
-          font-weight: 500;
+          font-weight: 600;
+          font-size: 25px;
         }
       }
 
