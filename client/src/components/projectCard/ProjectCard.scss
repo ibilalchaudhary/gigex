@@ -26,7 +26,6 @@
     }
 
     .texts {
-      
       h2 {
         font-size: 14px;
         font-weight: 500;
@@ -35,8 +34,14 @@
       span {
         font-size: 14px;
         font-weight: 400;
-        color: #62646A;
+        color: #62646a;
       }
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .projectCard {
+    width: 80vw !important;
   }
 }
