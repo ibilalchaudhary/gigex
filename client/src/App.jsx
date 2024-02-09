@@ -12,25 +12,27 @@ import Orders from "./pages/orders/Orders";
 import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/MyGigs";
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from '@tanstack/react-query'
 
-//fonts 
+//fonts
 import "./fonts/DomaineDispNar-MediumItalic.woff";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet
-} from "react-router-dom";
-
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 function App() {
-
+  const queryClient = new QueryClient()
   const Layout = () => {
     return (
       <div className="app">
+        <QueryClientProvider client={queryClient}>
         <Navbar />
         <Outlet />
         <Footer />
+        </QueryClientProvider>
       </div>
     );
   };
@@ -72,24 +74,19 @@ function App() {
           path: "/gig/:id",
           element: <Gig />,
         },
+        {
+          path: "/register",
+          element: <Register />,
+        },
+        {
+          path: "/login",
+          element: <Login />,
+        },
       ],
-    },
-    {
-      path: "/register",
-      element: <Register />,
-    },
-    {
-      path: "/login",
-      element: <Login />,
     },
   ]);
 
-
-  return (
-    <div>
-      <RouterProvider router={router} />
-    </div>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

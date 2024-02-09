@@ -113,6 +113,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      gap: 90px;
     }
   }
 }
@@ -136,4 +137,16 @@
       }
     }
   }
+}
+
+.shimmer-card {
+  border-radius: 8px;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  width: 100%;
+}
+
+
+.shimmer-thumbnail {
+  border-radius: 9px;
 }

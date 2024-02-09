@@ -284,7 +284,7 @@ function Home() {
       </div>
       <div className="projects">
         <span className="title1">Inspiring work made on Gigex</span>
-        <Slide slidesToShow={4} arrowsScroll={4}>
+        <Slide slidesToShow={slidesToShow} arrowsScroll={arrowsScroll}>
           {projects.map((card) => (
             <ProjectCard key={card.id} card={card} />
           ))}

@@ -16,6 +16,13 @@
   &.active {
     background-color: white;
     color: black;
+
+    .link {
+      button {
+        border-color: #f59330 !important;
+        color: #000000 !important;
+      }
+    }
   }
 
   .container {
@@ -138,7 +145,7 @@
     .container {
       display: flex;
 
-      .logo{
+      .logo {
         display: flex;
         flex-direction: row;
       }
@@ -185,7 +192,7 @@
             width: 40%;
           }
 
-          .options{
+          .options {
             left: 22vw;
             top: 16vw;
             width: 28vw;
