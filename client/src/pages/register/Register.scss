@@ -10,8 +10,9 @@
       gap: 120px;
   
       h1 {
-        color: gray;
+        color: rgb(76, 76, 76);
         margin-bottom: 20px;
+        font-weight: 550;
       }
   
       .left,
@@ -30,7 +31,30 @@
         input,
         textarea {
           padding: 20px;
-          border: 1px solid rgb(216, 214, 214);
+          border: 1.5px solid rgb(216, 214, 214);
+          border-radius: 8px;
+          font-size: 1rem;
+          resize: none;
+        }
+
+        input[type=file]{
+            border: 0;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        input::file-selector-button {
+          font-weight: 450;
+          color: rgb(255, 255, 255);
+          width: 8rem;
+          height: 3rem;
+          padding: 0.7em 1rem;
+          border: thin solid grey;
+          border-radius: 7px;
+          background-color: black;
+          font-family: 'Poppins', sans-serif;
+          cursor: pointer;
+          margin-right: 12px;
         }
   
         button {
@@ -38,9 +62,10 @@
           padding: 20px;
           color: white;
           font-weight: 500;
-          font-size: 18px;
-          background-color: #1dbf73;
+          font-size: 1.5rem;
+          background-color: #F59330;
           cursor: pointer;
+          border-radius: 8px;
         }
   
         .toggle {
@@ -89,11 +114,11 @@
           }
   
           input:checked + .slider {
-            background-color: #2196f3;
+            background-color: #F59330;
           }
   
           input:focus + .slider {
-            box-shadow: 0 0 1px #2196f3;
+            box-shadow: 0 0 1px #F59330;
           }
   
           input:checked + .slider:before {

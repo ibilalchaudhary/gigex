@@ -11,8 +11,9 @@
       gap: 20px;
   
       h1 {
-        color: gray;
+        color: rgb(62, 62, 62);
         margin-bottom: 20px;
+        font-weight: 550;
       }
   
       label {
@@ -23,7 +24,14 @@
       input,
       textarea {
         padding: 20px;
-        border: 1px solid rgb(216, 214, 214);
+        border: 2px solid rgb(216, 214, 214);
+        border-radius: 8px;
+        font-size: 1rem;
+        
+
+        &::placeholder{
+          color: rgb(221, 221, 221);
+        }
       }
   
       button {
@@ -31,8 +39,9 @@
         padding: 20px;
         color: white;
         font-weight: 500;
-        font-size: 18px;
-        background-color: #1dbf73;
+        font-size: 1.5rem;
+        background-color: #F59330;
+        border-radius: 8px;
         cursor: pointer;
       }
   
