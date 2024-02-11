@@ -88,7 +88,7 @@ function Register() {
           <input
             name="phone"
             type="text"
-            placeholder="+1 234 567 89"
+            placeholder="+91 2344 5679 89"
             onChange={handleChange}
           />
           <label htmlFor="">Description</label>
