@@ -1,8 +1,9 @@
 import "./app.scss";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/home/Home";
+import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import Home from "./pages/home/Home";
 import Gigs from "./pages/gigs/Gigs";
 import Gig from "./pages/gig/Gig";
 import Login from "./pages/login/Login";
@@ -15,23 +16,19 @@ import MyGigs from "./pages/myGigs/MyGigs";
 import {
   QueryClient,
   QueryClientProvider,
-  useQuery,
-} from '@tanstack/react-query'
-
-//fonts
-import "./fonts/DomaineDispNar-MediumItalic.woff";
-
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-
+} from "@tanstack/react-query";
+import Pay from "./pages/pay/Pay";
+import Success from "./pages/success/Success";
 function App() {
-  const queryClient = new QueryClient()
+  const queryClient = new QueryClient();
+
   const Layout = () => {
     return (
       <div className="app">
         <QueryClientProvider client={queryClient}>
-        <Navbar />
-        <Outlet />
-        <Footer />
+          <Navbar />
+          <Outlet />
+          <Footer />
         </QueryClientProvider>
       </div>
     );
@@ -81,6 +78,14 @@ function App() {
         {
           path: "/login",
           element: <Login />,
+        },
+        {
+          path: "/pay/:id",
+          element: <Pay />,
+        },
+        {
+          path: "/success",
+          element: <Success />,
         },
       ],
     },
