@@ -4,6 +4,7 @@ import newRequest from "../../utils/newRequest";
 import Review from "../review/Review";
 import "./Reviews.scss";
 const Reviews = ({ gigId }) => {
+  
 
   const queryClient = useQueryClient()
   const { isLoading, error, data } = useQuery({
@@ -28,6 +29,8 @@ const Reviews = ({ gigId }) => {
     const desc = e.target[0].value;
     const star = e.target[1].value;
     mutation.mutate({ gigId, desc, star });
+
+    setInputValue('');
   };
 
   return (
