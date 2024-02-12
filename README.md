@@ -1,6 +1,6 @@
 # Gigex: Freelance Services Marketplace 
 
-## [Video Link](https://gigex-react.vercel.app/)
+## [Video Link](https://www.veed.io/view/da3567ab-1159-490b-9a97-a833ea682337?panel=share)
 ## [Frontend Deployment Link](https://gigex-react.vercel.app/)
 ## [Backend Deployment Link](https://gigex-api.onrender.com/)
 ## [Figma Design](https://www.figma.com/file/C1c85stSn9AQy5k0mSNbzA/Gigex-by-Jyotiraditya-Singh?type=design&node-id=0%3A1&mode=design&t=ildu2ePMVmb7zAKJ-1)
