@@ -21,9 +21,9 @@ Addressing the hassle of finding reliable freelance services and streamlining th
 Utilizing the MERN Stack (MongoDB, Express.js, React, Node.js) to create a scalable, responsive, and efficient Freelance Services Marketplace. Employing user-friendly interfaces and robust authentication mechanisms to enhance the overall user experience.
 
 ## List Of Features:
-1. **Auth API:** Implement authentication through a secure API.
+1. **MongoDb Auth:** Implement authentication through MongoDb.
 2. **Dashboard:** User's main interface displaying relevant information and actions.
-3. **Edit Gigs:** Allow users to modify and update their gig listings.
+3. **Delete Gigs:** Allow users to delete their gig listings.
 4. **Gig Page:** Individual page showcasing details of a specific gig.
 5. **Create Gig Page:** Interface for users to add new gigs to the platform.
 6. **Gigs Search:** A search functionality to find relevant gigs based on keywords or categories.
@@ -35,16 +35,31 @@ Utilizing the MERN Stack (MongoDB, Express.js, React, Node.js) to create a scala
 12. **Register Functionality (MongoDB):** User registration and data storage using MongoDB.
 13. **Seller Orders Page:** Specialized page for sellers to manage their orders.
 14. **Show Gigs:** Display a list of available gigs for users to explore.
-15. **Social Login:** Allow users to log in using their social media accounts.
-16. **Add Reviews and Ratings:** Enable users to provide feedback and ratings for completed gigs.
-17. **Auth UI:** User interface design for a seamless authentication experience.
-18. **Order:** Core functionality for placing and managing orders.
-19. **Gig Categories:** Categorize gigs into different types (e.g., writing, programming, design).
-20. **Payment Gateway:** Integration of a secure payment system for transactions.
-21. **User Notifications:** Notify users of important events, such as new messages or completed orders.
-22. **Featured Gigs:** Highlight certain gigs as featured for better visibility.
-23. **Analytics Dashboard:** Provide users with insights into their performance and statistics.
-24. **Mobile Responsiveness:** Ensure the platform is accessible and user-friendly on various devices.
-25. **FAQ Section:** Address common user queries through a Frequently Asked Questions section.
+15. **Add Reviews and Ratings:** Enable users to provide feedback and ratings for completed gigs.
+16. **Auth UI:** User interface design for a seamless authentication experience.
+17. **Order:** Core functionality for placing and managing orders.
+18. **Gig Categories:** Categorize gigs into different types (e.g., writing, programming, design).
+19. **Payment Gateway:** Integration of a secure payment system for transactions.
+20. **Featured Gigs:** Highlight certain gigs as featured for better visibility.
+21. **Mobile Responsiveness:** Ensure the platform is accessible and user-friendly on various devices.
+22. **React Toastify:** Display toast notifications for various user actions.
+23. **React Infinite Carousel:** Implement an infinite carousel for displaying content like featured gigs or images.
+24. **Shimmer Effects:** Add shimmer effects to enhance the loading experience and indicate content loading to users.
+
+# Home Page
+![home_page_gif](https://github.com/singhjyotiraditya/gigex/assets/96012244/80ded94f-6d9c-4429-9458-90c2020f9acf)
+#
+
+# Shimmer Effect
+![shimmer_effect](https://github.com/singhjyotiraditya/gigex/assets/96012244/e1f16cff-3ebd-4a06-a585-d7a5778268d3)
+#
+
+# React Toastify
+![toastify](https://github.com/singhjyotiraditya/gigex/assets/96012244/0942050a-1fbd-4484-b141-7310ad227673)
+#
+
+# Chat System
+![chat](https://github.com/singhjyotiraditya/gigex/assets/96012244/66f8a2c2-7452-4db2-868e-6f73a047e1cc)
+#
 
 Gigex ensures a seamless and efficient marketplace for freelancers and clients alike, fostering a community of collaboration and success.
